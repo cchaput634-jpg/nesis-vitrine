@@ -4,7 +4,7 @@ export function Contact() {
   return (
     <section className="contact" id="contact">
       <FanSvg
-        className="fan"
+        className="fan fan-right"
         gradientId="fg-contact"
         paths={[
           "M 0 0 Q 200 190 800 260",

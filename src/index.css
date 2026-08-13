@@ -109,6 +109,13 @@ h3 {
   opacity: 0.75;
   z-index: 1;
 }
+.fan-right {
+  left: auto;
+  right: 0;
+  width: 60%;
+  opacity: 0.4;
+  transform: scaleX(-1);
+}
 
 .nav {
   position: relative;
