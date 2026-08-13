@@ -47,11 +47,15 @@ export function Hero() {
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="#services" className="btn btn-ghost-dark">
-              Découvrir les services
-            </a>
           </div>
         </div>
+
+        <a href="#services" className="hero-scroll" aria-label="Découvrir les services">
+          <span>Découvrir</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
 
         <div className="hero-visual">
           <div className="visual-ring"></div>
