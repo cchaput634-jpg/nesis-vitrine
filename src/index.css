@@ -664,10 +664,7 @@ footer {
 @media (max-width: 960px) {
   .nav-links { display: none; }
   .nav { padding: 18px 0; }
-  .nav-inner .btn {
-    padding: 10px 18px;
-    font-size: 0.82rem;
-  }
+  .nav-inner .btn { display: none; }
   .hero-scroll { display: none; }
   .hero-body {
     grid-template-columns: 1fr;
