@@ -256,6 +256,49 @@ h3 {
   flex-wrap: wrap;
 }
 
+/* Mobile-only feature pills — hidden on desktop */
+.hero-features-mobile {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-features-mobile li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.hero-features-mobile .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-teal-bright);
+  box-shadow: 0 0 8px var(--color-teal-bright);
+}
+
+/* Watermark N logo — mobile only, subtle background */
+.hero-watermark {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: -60px;
+  width: 320px;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 1;
+  filter: grayscale(1) brightness(3);
+}
+
 .hero-scroll {
   position: absolute;
   bottom: 24px;
@@ -619,31 +662,35 @@ footer {
 }
 
 @media (max-width: 960px) {
-  .nav-links {
-    display: none;
-  }
+  .nav-links { display: none; }
+  .nav { padding: 18px 0; }
   .nav-inner .btn {
-    display: none;
+    padding: 10px 18px;
+    font-size: 0.82rem;
   }
-  .hero-scroll {
-    display: none;
-  }
+  .hero-scroll { display: none; }
   .hero-body {
     grid-template-columns: 1fr;
-    gap: 60px;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    gap: 0;
+    padding: 24px 24px 72px;
+    align-items: start;
   }
-  .hero-visual {
-    max-width: 320px;
-    margin: 0 auto;
-  }
+  .hero-copy .eyebrow { margin-bottom: 22px; font-size: 0.72rem; }
+  .hero-copy h1 { font-size: clamp(2rem, 9vw, 2.9rem); margin-bottom: 20px; }
+  .hero-copy h1 .line { white-space: normal; }
+  .hero-lede { font-size: 1rem; margin-bottom: 28px; }
+  .hero-visual { display: none; }
+  .hero-features-mobile { display: flex; }
+  .hero-watermark { display: block; }
   .fan {
-    width: 100%;
-    opacity: 0.4;
+    width: 85%;
+    opacity: 0.3;
   }
-  .hero-copy h1 .line {
-    white-space: normal;
+  .hero-shell::before {
+    left: -30%;
+    bottom: -20%;
+    width: 90%;
+    height: 50%;
   }
   .services-grid {
     grid-template-columns: 1fr;

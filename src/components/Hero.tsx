@@ -4,6 +4,7 @@ export function Hero() {
   return (
     <div className="hero-shell">
       <FanSvg className="fan" />
+      <img className="hero-watermark" src="/nesis-logo.png" alt="" aria-hidden="true" />
 
       <header className="nav">
         <div className="nav-inner">
@@ -48,6 +49,12 @@ export function Hero() {
               </svg>
             </a>
           </div>
+
+          <ul className="hero-features-mobile" aria-hidden="true">
+            <li><span className="dot"></span>Process sur-mesure</li>
+            <li><span className="dot"></span>Sans embauche</li>
+            <li><span className="dot"></span>Expertise SAV</li>
+          </ul>
         </div>
 
         <a href="#services" className="hero-scroll" aria-label="Découvrir les services">
